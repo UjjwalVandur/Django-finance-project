@@ -1,0 +1,151 @@
+/* Common CSS for complete page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* CSS for  header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    font-family: "Nunito", sans-serif;
+    z-index: 1000;
+    background-color: white;
+}
+
+/* CSS for Logo */
+.header .logo {
+    position: relative;
+    top: -5px;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: rgb(232, 88, 88);
+}
+
+.header .logo span::after {
+    content: "FOUNDATION";
+    position: absolute;
+    bottom: -7px;
+    left: 2px;
+    font-size: 13px;
+    letter-spacing: 15px;
+    color: black;
+}
+
+.header .logo span {
+    cursor: pointer;
+}
+
+
+/* CSS for navbar */
+.header .navbar ul {
+    list-style: none;
+}
+
+.header .navbar ul li {
+    position: relative;
+    float: left;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.header .navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.header .navbar ul li a {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 7px 30px;
+    color: black;
+    display: block;
+    border-radius: 5px;
+}
+
+.header .navbar ul li a:hover {
+    background-color: salmon;
+}
+
+.header .navbar ul li span {
+    position: absolute;
+    right: 20px;
+    font-weight: 900;
+}
+
+.header .navbar ul li ul {
+    position: absolute;
+    top: 58px;
+    left: -20px;
+    width: 200px;
+    background-color: salmon;
+    display: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.header .navbar ul li ul li {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.header .navbar ul li ul li:last-child {
+    border-bottom: none;
+}
+
+.header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+    border: 2px solid black;
+}
+
+.header .navbar ul li:focus-within {
+    background-color: salmon;
+}
+
+.header .navbar ul li:focus-within > ul,
+.header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+/* CSS for login and signup buttons */
+.login-signup-btns{
+    display: flex;
+    gap: 20px;
+}
+
+#login-btn, #signup-btn {
+    font-family: 'Montserrat', sans-serif;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+#signup-btn {
+    background-color: #33C896;
+}
+
+
+.user-profile {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    position: relative;
+    top: 80px;
+    width: 45vmax;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 20px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+#head {
+    height: 15%;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.error-message {
+    position: relative;
+    top: 80px;
+    width: 75%;
+    background-color: #e15664cc;
+    margin: 0 12.5%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    border-radius: 5px;
+}
+
+.userdetails {
+    position: relative;
+    width: 75%;
+    height: 80%;
+    margin: 0 12.5%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.username, .email, .password {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.username label, .email label, .password label {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#username, #email, #password {
+    margin-top: 4px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.225);
+    padding: 2px 10px;
+    font-size: 16px;
+}
+
+.error-border {
+    outline: 1px solid red;
+}
+
+.error-msg {
+    margin-top: 5px;
+    color: rgba(255, 0, 0, 0.737);
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+}
+
+#username:focus, #email:focus, #password:focus {
+    background-color: rgba(128, 128, 128, 0.500);
+}
+
+.rememberme-forgotpass {
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.rememberme {
+    padding-top: 10px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.forgotpass {
+    padding-top: 10px;
+}
+
+.forgotpass a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login {
+    font-size: 15px;
+}
+
+.login a {
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#btn {
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #28C3FC;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #055075;
+    color: white;
+}
+

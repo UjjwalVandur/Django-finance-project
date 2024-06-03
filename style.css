@@ -1,0 +1,758 @@
+/* Universal CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* User Profile CSS */
+.user-profile {
+    font-family: 'Montserrat', sans-serif;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Hero Section CSS */
+.hero {
+    position: relative;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    width: 55%;
+    height: calc(100% - 80px);
+    padding: 5vw 5vw;
+}
+
+.left h1 {
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 3.3vw;
+    line-height: 4vw;
+}
+
+.left #E {
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 5.5vw;
+    line-height: 4.5vw;
+}
+
+.left #blood {
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 4.7vw;
+    line-height: 4.5vw;
+    color: #e36155;
+}
+
+.left p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 600;
+    width: 90%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+.left button {
+    font-family: 'Rowdies', sans-serif;
+    font-size: 1.7vw;
+    padding: 1.3vw 2.3vw;
+    color: black;
+    background-color: #87cdec;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0.4vw 0.8vw black;
+}
+
+.right {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .frame {
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.right .slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.right .image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.frame .dot {
+    position: absolute;
+    bottom: 1.5vw;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.dot span {
+    position: relative;
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 50%;
+    border: 0.125vw solid black;
+    z-index: 100;
+}
+
+
+/* Blood Information CSS */
+.blood-types {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.blood-types-content-left-side {
+    width: 50%;
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.counter {
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    background: url(../images/counter-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.counter img {
+    width: 40px;
+}
+
+.counter h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: "Madimi One", sans-serif;
+}
+
+.counter p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.blood-types-chart-right-side {
+    width: 50%;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blood-types-chart-right-side h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+.blood-types-chart-right-side .blood-types-table {
+    font-family: 'Montserrat', sans-serif;
+    border-collapse: collapse;
+    font-size: 15px;
+    min-width: 550px;
+    height: 450px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.blood-types-table thead tr {
+    background-color: #e36155;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.blood-types-table th,
+.blood-types-table td {
+    padding: 10px 15px;
+}
+
+.blood-types-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.blood-types-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.blood-types-table tbody tr:last-of-type {
+    border-bottom: 2px solid #e36155;
+}
+
+
+.blood-donation-info {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+
+.types-of-donation-info {
+    padding: 40px;
+}
+
+.types-of-donation-info h3 {
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.types-of-donation-info p {
+    text-align: left;
+    letter-spacing: 1px;
+    padding: 0 30px;
+    margin-bottom: 10px;
+}
+
+.types-of-donation-info p span {
+    font-weight: 700;
+}
+
+.types-of-donation-info .donation-details {
+    width: 100%;
+    display: flex;
+    padding: 20px 20px 0 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.donation-details div {
+    height: 40px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.donation-details div a {
+    height: 40px;
+    width: 400px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    letter-spacing: 1px;
+}
+
+.donation-details div a:hover {
+    background-color: #b7d5e2;
+}
+
+.infoPanel {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding: 20px 0;
+    display: none;
+}
+
+.infoPanel div {
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+.infoPanel div:not(:last-child) {
+    border-right: 2px solid #fff;
+}
+
+.infoPanel div h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.infoPanel div p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.infoPanel div p:not(:last-of-type) {
+    margin-bottom: 50px;
+}
+
+/* About Us CSS */
+.about-us {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+
+
+.about-us .about-us-title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: calc(100% / 3);
+    padding: 10px;
+    text-align: center;
+}
+
+.card {
+    border: 2px solid #aaa;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background-color: #dadada; 
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card .icon-wrapper {
+    background-color: #e36155;
+    position: relative;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.card p {
+    color: black;
+    font-size: 14px;
+}
+
+.card a {
+    color: black;
+    background-color: #87cdec;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;  
+}
+
+/* Contact us CSS */
+.contact-us {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+    padding: 40px;
+}
+
+
+
+.contact-us .contact-us-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us .contact-us-title h3 {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.contact-us-box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact {
+    padding: 20px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.form {
+    grid-area: form;
+}
+
+.form h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox {
+    width: 100%;
+}
+
+.inputBox span {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.inputBox input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #bbb;
+    letter-spacing: 1px;
+}
+
+.inputBox textarea {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #bbb;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.inputBox input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e36155;
+    color: white;
+    border: none;
+    max-width: 120px;
+    font-size: 16px;
+    padding: 14px 15px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.inputBox ::placeholder {
+    color: #999;
+}
+
+.info {
+    grid-area: info;
+    background-color: #87cdec;
+}
+
+.info h3 {
+    margin-bottom: 20px;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.info .infoBox div span {
+    width: 40px;
+    height: 40px;
+    color: black;
+    background-color: #e36155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p {
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.info .infoBox div a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.social-media-links {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-media-links li {
+    list-style: none;
+}
+
+.social-media-links li a {
+    color: black;
+    font-size: 32px;
+}
+
+.map {
+    grid-area: map;
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer CSS */
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 80px;
+    width: 100%;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+
+
+.footer .main-footer {
+    width: 100%;
+    display: flex;
+}
+
+.about-website {
+    width: 30%;
+    padding: 20px;
+    background-color: #87cdec;
+}
+
+.about-website .website-logo {
+    width: 100%;
+    text-align: center;
+}
+
+.website-logo span {
+    position: relative;
+   font-size: 25px;
+   font-weight: 700;
+   letter-spacing: 2px;
+   color: #e36155;
+}
+
+.website-logo span::after {
+   content: "FOUNDATION";
+   position: absolute;
+   top: 25px;
+   left: 2px;
+   font-size: 15px;
+   letter-spacing: 10px;
+}
+
+.website-content {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.website-social-links {
+    width: 100%;
+    padding: 20px;
+}
+
+.website-social-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.website-social-links ul li {
+    list-style: none;
+}
+
+.website-social-links ul li a {
+    color: black;
+    font-size: 25px;
+}
+
+.main-footer .all-website-links {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #87cdec;
+    border-left: 3px solid #ddd;
+}
+
+.all-website-links div h4 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.all-website-links div ul li {
+    list-style: none;
+    padding: 2px 0;
+}
+
+.all-website-links div ul li a {
+    font-size: 12px;
+    color: blue;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.footer .partners {
+    width: 100%;
+    border-top: 3px solid #ddd;
+}
+
+.partners div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #87cdec;
+    padding: 20px;
+}
+
+.partners div span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.footer .copyright {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background-color: #87cdec;
+    border-top: 3px solid #ddd;
+    padding: 30px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+}
+
+.copyright span {
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.copyright .stamp {
+    font-size: 25px;
+    font-weight: 500;
+}
